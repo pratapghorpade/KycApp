@@ -24,7 +24,7 @@ Cypress.Commands.add('WriteFile', (CustID, PanNumber) => {
                                                             apiParam: {
                                                             customerId: [CustID]
                                                             }
-
+                                   //na
      })
 })
 
