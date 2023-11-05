@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   
+    "test": "npx cypress run --record --key bd846a99-0fb5-4313-bdee-a8fd7762219b",
+    "test:Customerkycflow": "npx cypress run --spec cypress/e2e/CustomerKycFlow.cy.js"
+
   },
   "repository": {
     "type": "git",
@@ -20,3 +23,5 @@
     "cypress": "^13.4.0"
   }
 }
+
+
