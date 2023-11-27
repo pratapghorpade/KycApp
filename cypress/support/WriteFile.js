@@ -1,9 +1,10 @@
 
-import Auth2 from "/home/dharapajwani/APIAutomation/KycApp/cypress/Payload/Auth2.json"
+//import Auth2 from "/home/dharapajwani/APIAutomation/KycApp/cypress/Payload/Auth2.json"
 
 Cypress.Commands.add('WriteFile', (CustID, PanNumber) => {
 
-              
+    cy.fixture('Auth2').then( (Auth2) => {
+
 
                                         cy.writeFile("../KycApp/cypress/fixtures/KycStatus.json", {                                               
                                                                 customerId: CustID,
@@ -24,7 +25,8 @@ Cypress.Commands.add('WriteFile', (CustID, PanNumber) => {
                                                             apiParam: {
                                                             customerId: [CustID]
                                                             }
-                                   //na
+                                   
      })
+})
 })
 

@@ -6,7 +6,7 @@ module.exports = defineConfig({
   
   e2e: {
 
-    baseUrl : 'https://stagingapi.goldenpi.com/',
+    baseUrl : 'https://testapi.goldenpi.com/',
     
     setupNodeEvents(on, config) {
       

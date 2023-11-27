@@ -1,9 +1,9 @@
 {
-  "authToken": "73dVfmVdAhimcw5ParKTsaOyg13WKlF6YCzA1YE9Qmw9sGHiudpiD4QHD5tQ8yOh",
+  "authToken": "e2z1hHooNlGiUrB8iAGHs3MNv1z7FmvHK4IugUbKOMXntHiNxTZF0usLfh9uoNAT",
   "apiKey": "deleteCustomerForQa",
   "apiParam": {
     "customerId": [
-      "PG105151"
+      "PG105712"
     ]
   }
 }

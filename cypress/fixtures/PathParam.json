@@ -3,6 +3,6 @@
     "Status":  "rest/v0/kyc/kyc-status",
     "CheckOutkUrl": "rest/v0/kyc/generate-checkout-url",
     "AddDoc": "rest/v0/kyc/add-kyc",
-    "DeleteUser" : "https://stagingdealdesk.goldenpi.com/api/chv1/exec_req"
+    "DeleteUser" : "https://testdealdesk.goldenpi.com/api/chv1/exec_req"
 
 }

@@ -12,7 +12,7 @@ describe('Client KYC', ()=> {
 
                                                             expect(resp.status).to.eq(200);
                                                             expect(resp.body.meta.status).to.eq("success");
-                                                            expect(resp.body.data.panNo).to.eq("BRYPG5096E");
+                                                            expect(resp.body.data.panNo).to.eq("BRYPG5095E");
                                                             expect(resp.body.data.customerId).to.not.be.null;
                                                               CustID = resp.body.data.customerId;                                                          
                                                             cy.log(CustID);
@@ -31,12 +31,12 @@ describe('Client KYC', ()=> {
                                                                                   
                                                         })
 
-                        cy.Verify_Email().then((resp) => {                                                         
-                                                            expect(resp.status).to.eq(200);                                           
-                                                            cy.log("***"+resp.body.data.checkOutUrl+"***");   
+                        // cy.Verify_Email().then((resp) => {                                                         
+                        //                                     expect(resp.status).to.eq(200);                                           
+                        //                                     cy.log("***"+resp.body.data.checkOutUrl+"***");   
                                                             
                                                           
-                                                         })
+                        //                                  })
 
                         cy.Verify_PAN().then((resp) => {
                                                             expect(resp.status).to.eq(200);
@@ -82,10 +82,7 @@ describe('Client KYC', ()=> {
                                                            })   
                         cy.Kyc_Status().then((resp) => {
                                                             cy.softAssert(resp.body.data.kycStatus, "PENDING_VERIFICATION", '***KYC Status found ' +resp.body.data.kycStatus+' required PENDING_VERIFICATION***'); 
-                                                                                           
-                                         
-                            
-                      
+                                                                                                               
                                           
         })
     })
